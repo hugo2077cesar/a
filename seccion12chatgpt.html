@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopción de Mascotas</title>
+  <link rel="stylesheet" href="seccion.css">
+  <style>
+    /* Agrega el estilo para el efecto de acercamiento */
+    .pet-card img:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <script>
+    function mostrarAgradecimiento(nombreMascota) {
+      alert(`¡Gracias por adoptar a ${nombreMascota}! Te deseamos muchas aventuras juntos.`);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>¡Adopta una Mascota!</h1>
+    <p>Encuentra a tu nuevo amigo peludo</p>
+  </header>
+  <section class="content">
+    <div class="about">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos un refugio dedicado a encontrar hogares amorosos para mascotas necesitadas.</p>
+    </div>
+    <div class="adoptable-pets">
+      <h2>Mascotas Disponibles</h2>
+      <div class="pet-card">
+        <img src="ca1.jpg" alt="Perro 1">
+        <h3>Nombre del Perro 1</h3>
+        <p>Edad: X años</p>
+        <button onclick="mostrarAgradecimiento('Perro 1')">Adoptar</button>
+      </div>
+      <div class="pet-card">
+        <img src="ca2.jpg" alt="Gato 1">
+        <h3>Nombre del Gato 1</h3>
+        <p>Edad: Y años</p>
+        <button onclick="mostrarAgradecimiento('Gato 1')">Adoptar</button>
+      </div>
+      <div class="pet-card">
+        <img src="ca3.jpg" alt="Conejo 1">
+        <h3>Nombre del Conejo 1</h3>
+        <p>Edad: Z años</p>
+        <button onclick="mostrarAgradecimiento('Conejo 1')">Adoptar</button>
+      </div>
+    </div>
